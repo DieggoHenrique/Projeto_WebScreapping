@@ -16,10 +16,9 @@ class WebScreapingEcommerce:
     def menu(self):
         print('#========================================#')
         print('#    RASPAGEM DE DADOS SITE E-COMMERCE   #')
-        print('#           PROJETO 01                   #')
+        print('#               PROJETO 01               #')
         print('#========================================#')
     
-        
     def coletar_email_senha(self):
         print('Digite um email e senha válidos para receber o relatório.')
         self.email = input('Digite seu e-mail: ')
@@ -28,7 +27,7 @@ class WebScreapingEcommerce:
         print('E-mail e senha salvos!')
     
     def valida_email(self):
-        email_validador = re.search(r'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$', self.email) 
+        email_validador = re.search(r'[a-zA-Z0-9_-]+@[a-zA-Z0-9]+\.[a-zA-Z]{1,3}$', self.email) 
         if email_validador:
             print('E-mail válido!')
         else: 
