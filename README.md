@@ -2,14 +2,30 @@
 
 Construindo uma solução baseada em Programação Orientada a Objeto em Python.
 
-O problema foi adaptado do [Youtube Dev aprender](https://www.youtube.com/watch?v=Rt-g2xVlGyI&t=1171s) extraído da comunidade dev-prende.  
+O problema foi adaptado do [Youtuber Dev aprender](https://www.youtube.com/watch?v=Rt-g2xVlGyI&t=1171s).  
 
-Varrer todos os nomes de cada modelo e o preço atual de cada um deles e na sequência, inserir estes dados dentro de uma planilha no excel.
+## Regras Gerais
 
-1 - Seu programa deve iniciar permitindo que o(a) usuário(a) digite o e-mail no qual deseja receber o relatório de valores dos celulares antes do programa iniciar.
 
-2 - Ao iniciar seu programa deverá navegar até o site mencionado(https://telefonesimportados.netlify.app) e extrair os nomes e valores de cada celular cadastrados no site e os ir inserindo em uma planilha(esta planilha é o relatório que estaremosenviando para o nosso cliente no passo a seguir).
+1 - Utilize boas regras de programação, tais como: 
+    - identação do código, 
+    - nomes intuitivos para as variáveis, e 
+    - comentarios explicando as ideias utilizadas.
 
-3 - O seu programa deve parar de buscar quando chegar a página final
+## Descrição: 
 
-4 - Envie este relatório de preços em anexo para o e-mail que foi inserido no inicio do programa.
+Escreva um programa com especificações abaixo:
+
+1. Crie um sistema onde o cliente informe o e-mail, que receberá a planilha com os dados coletados.
+
+2. A aplicação deverá percorrer todas as páginas do site [https://telefonesimportados.netlify.app](https://telefonesimportados.netlify.app), onde possui os produtos (embora o site possua 5 páginas utilize uma função dinâmica, pois um dia o site poderá ter novas páginas) extraindo as seguintes informações: 
+  a. Nome do produto;
+  b. Valor do produto.
+  
+3. Na sequência, as informações do item 2, deverão ser salvas em uma planilha em excel e salva no diretório.
+
+4. O programa deverá ser encerrado quando tiver varrido todos os produtos do site.
+
+5. Envie este relatório de preços em anexo para o e-mail que foi inserido no inicio do programa.
+
+## Fim da especificação
