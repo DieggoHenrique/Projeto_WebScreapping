@@ -2,7 +2,7 @@
 
 Construindo uma solução baseada em Programação Orientada a Objeto em Python.
 
-O problema foi extraído da comunidade dev-prende.  
+O problema foi adaptado do [Youtube Dev aprender](https://www.youtube.com/watch?v=Rt-g2xVlGyI&t=1171s) extraído da comunidade dev-prende.  
 
 Varrer todos os nomes de cada modelo e o preço atual de cada um deles e na sequência, inserir estes dados dentro de uma planilha no excel.
 
