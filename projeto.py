@@ -3,9 +3,8 @@
 #============================================================================#
 
 # BIBLIOTECA DO PROJETO
+import os
 import re
-import smtplib
-from email.message import EmailMessage
 
 # Construindo o projeto
 class WebScreapingEcommerce:
@@ -19,6 +18,7 @@ class WebScreapingEcommerce:
     
     # Cabeçalho do projeto
     def menu(self):
+        os.system("clear")
         print('#========================================#')
         print('#    RASPAGEM DE DADOS SITE E-COMMERCE   #')
         print('#               PROJETO 01               #')
@@ -46,27 +46,7 @@ class WebScreapingEcommerce:
         else: 
             print('Digite um e-mail válido!') 
             self.coletar_email_senha()
-            
-    
-    def anvia_email(self, email, senha):
-        msg = EmailMessage()
-        msg['Subject'] = 'Planilha de Preços Site U Stora'
-        msg['From'] = self.email
-        msg['To'] = self.email
-        msg.set_content('Segue planilha com o resultado solicitado.')
-
-    def conexao_email(self):
-        msg = EmailMessage()
-        conexao = smtplib.SMTP('smtp.gmail.com: 587')
-        conexao.starttls()
-        conexao.ehlo()
-        conexao.login(self.email, self.senha, initial_response_ok=True)
-        conexao.send_message(msg)
-        print(f'Email enviado com sucesso!')
-        conexao.quit()
-
-
-        
+                    
         
                 
 rum = WebScreapingEcommerce()
