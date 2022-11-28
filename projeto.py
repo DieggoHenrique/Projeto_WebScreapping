@@ -13,8 +13,6 @@ class WebScreapingEcommerce:
     def start(self):
         self.menu()
         self.coletar_email_senha()
-        self.conexao_email()
-        self.envia_email()
     
     # Cabeçalho do projeto
     def menu(self):
